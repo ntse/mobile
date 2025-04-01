@@ -1,3 +1,9 @@
+---
+title: Code Guidance
+parent: Guides
+nav_order: 1
+---
+
 # Code Guidance
 
 ## General Principles
@@ -5,9 +11,7 @@
 ### Code should be correct, clear, and concise — in that order
 Correct means _provably_ correct — backed by tests. Every bug fix and new feature should come with tests to catch regressions early.
 
-Prioritize simplicity over cleverness — aim for code that's easy to read and maintain.
-
-Deeply nested loops, dynamic blocks, and complex ternaries make it harder to understand what’s going on. That slows down junior engineers, future-you, and anyone trying to get their head around the Terraform. The goal isn't to write clever code — it's to write code your teammates can easily understand, use, and maintain.
+Deeply nested loops, dynamic blocks, and complex ternaries make it harder to understand what’s going on. That slows down junior engineers, future-you, and anyone trying to get their head around the codebase. The goal isn't to write clever code — it's to write code your teammates can easily understand, use, and maintain.
 
 ### Use sensible names
 Avoid being cute or cryptic when naming things. Good names carry intent — a well-chosen variable or function name can often replace the need for a comment. Skip vague names like `obj`, `result`, or `foo`.
