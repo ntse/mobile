@@ -1,7 +1,6 @@
 ---
 title: Code Guidance
 parent: Guides
-nav_order: 2
 ---
 
 # Code Guidance

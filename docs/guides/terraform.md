@@ -1,14 +1,13 @@
 ---
 title: Terraform Guidance
 parent: Guides
-nav_order: 3
 ---
 
 # Terraform Guidance
 
-Terraform code should follow the standard [code guideance](./guides/code.md) in addition to the below principals.
+Terraform code should follow the standard [code guidance](./code.md) in addition to the below principals.
 
-Repo Organization
+### Repo Organization
 As a general rule, we avoid monolithic Terraform state files. Break infrastructure into logical units and define each in its own _stack_ with its own state file.
 
 This modular approach improves maintainability, makes changes easier to test and review, and avoids reduces the blast radius of mistakes and bugs.
@@ -44,8 +43,8 @@ To do this, follow a two-phase approach:
 
 Refer to our guides for setup instructions:
 
-[AWS Backend Guide](https://github.com/ukhsa-collaboration/devops-terraform-modules/blob/main/terraform-modules/aws/state-file/USAGE.MD)
-[Azure Backend Guide](https://github.com/ukhsa-collaboration/devops-terraform-modules/blob/main/terraform-modules/azure/state-file/USAGE.md)
+- [AWS Backend Guide](https://github.com/ukhsa-collaboration/devops-terraform-modules/blob/main/terraform-modules/aws/state-file/USAGE.MD)
+- [Azure Backend Guide](https://github.com/ukhsa-collaboration/devops-terraform-modules/blob/main/terraform-modules/azure/state-file/USAGE.md)
 
 ### Secure your state file
 Terraform state files can contain secrets and sensitive data. Protect them accordingly:

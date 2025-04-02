@@ -1,7 +1,6 @@
 ---
 title: UTI Diary
-parent: Services
-nav_order: 4
+parent: OHID
 ---
 
 # Main Navigation
